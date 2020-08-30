@@ -1,1 +1,10 @@
 # With a given integral number n, write a program to calculate the sum of cubes
+def suma_sześcianów(num):
+    sum= 0
+    for i in range(num+1):
+        sum = sum + (i**3)
+    return sum
+
+numer = int(input('Wproawdz liczbę'))
+wynik = suma_sześcianów(numer)
+print(wynik)
